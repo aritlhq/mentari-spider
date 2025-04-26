@@ -91,7 +91,7 @@ onMounted(async () => {
         <h3 class="text-yellow-500 font-bold">Important Notes:</h3>
         <ul class="list-disc pl-5 text-yellow-400">
           <li>Copy the token that appears in the console</li>
-          <li>Paste the token in the Mentari-LMS page</li>
+          <li>Paste the token in the Attendance and Mentari-LMS page</li>
           <li>Tokens typically expire after 24 hours</li>
           <li>Do not share your token with others</li>
         </ul>
