@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+@layer components{
+    .btn-green {
+        @apply border text-lg hover:shadow-[#00b400] hover:shadow-md px-2 py-1 border-[#00b400]
+    }
+}
