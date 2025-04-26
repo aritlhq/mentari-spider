@@ -1,0 +1,82 @@
+[
+    {
+        "nim": "221011450257",
+        "nama_mahasiswa": "MUHAMMAD FAQIH ALHARITS",
+        "id_semester_registrasi": "20242",
+        "nama_semester_registrasi": "GENAP 2024\/2025",
+        "id_kelas": "05TPLP003",
+        "id_mata_kuliah": "22TIF0302",
+        "nama_mata_kuliah": "DIGITAL ENTREPRENEURSHIP",
+        "sks": "2"
+    },
+    {
+        "nim": "221011450257",
+        "nama_mahasiswa": "MUHAMMAD FAQIH ALHARITS",
+        "id_semester_registrasi": "20242",
+        "nama_semester_registrasi": "GENAP 2024\/2025",
+        "id_kelas": "05TPLP003",
+        "id_mata_kuliah": "22TIF0243",
+        "nama_mata_kuliah": "KECERDASAN BUATAN",
+        "sks": "3"
+    },
+    {
+        "nim": "221011450257",
+        "nama_mahasiswa": "MUHAMMAD FAQIH ALHARITS",
+        "id_semester_registrasi": "20242",
+        "nama_semester_registrasi": "GENAP 2024\/2025",
+        "id_kelas": "05TPLP003",
+        "id_mata_kuliah": "22TIF1013",
+        "nama_mata_kuliah": "MACHINE LEARNING",
+        "sks": "3"
+    },
+    {
+        "nim": "221011450257",
+        "nama_mahasiswa": "MUHAMMAD FAQIH ALHARITS",
+        "id_semester_registrasi": "20242",
+        "nama_semester_registrasi": "GENAP 2024\/2025",
+        "id_kelas": "05TPLP003",
+        "id_mata_kuliah": "22TIF0293",
+        "nama_mata_kuliah": "METODE PENELITIAN",
+        "sks": "3"
+    },
+    {
+        "nim": "221011450257",
+        "nama_mahasiswa": "MUHAMMAD FAQIH ALHARITS",
+        "id_semester_registrasi": "20242",
+        "nama_semester_registrasi": "GENAP 2024\/2025",
+        "id_kelas": "05TPLP003",
+        "id_mata_kuliah": "22TIF0283",
+        "nama_mata_kuliah": "PEMROGRAMAN WEB I",
+        "sks": "3"
+    },
+    {
+        "nim": "221011450257",
+        "nama_mahasiswa": "MUHAMMAD FAQIH ALHARITS",
+        "id_semester_registrasi": "20242",
+        "nama_semester_registrasi": "GENAP 2024\/2025",
+        "id_kelas": "05TPLP003",
+        "id_mata_kuliah": "22TIF0262",
+        "nama_mata_kuliah": "PENGOLAHAN CITRA DIGITAL",
+        "sks": "2"
+    },
+    {
+        "nim": "221011450257",
+        "nama_mahasiswa": "MUHAMMAD FAQIH ALHARITS",
+        "id_semester_registrasi": "20242",
+        "nama_semester_registrasi": "GENAP 2024\/2025",
+        "id_kelas": "05TPLP003",
+        "id_mata_kuliah": "22TIF0252",
+        "nama_mata_kuliah": "SISTEM INFORMASI MANAJEMEN",
+        "sks": "2"
+    },
+    {
+        "nim": "221011450257",
+        "nama_mahasiswa": "MUHAMMAD FAQIH ALHARITS",
+        "id_semester_registrasi": "20242",
+        "nama_semester_registrasi": "GENAP 2024\/2025",
+        "id_kelas": "05TPLP003",
+        "id_mata_kuliah": "22TIF0272",
+        "nama_mata_kuliah": "TEKNIK RISET OPERASIONAL",
+        "sks": "2"
+    }
+]
