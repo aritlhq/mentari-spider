@@ -11,12 +11,15 @@ export function useMentariLms() {
     const loadingDetails = ref(false);
     const tokenExpiredMessage = ref('');
     const tokenExpiryTime = ref<string | null>(null);
+    const pretestData = ref<any>(null);
+    const showPretestModal = ref(false);
+    const loadingPretest = ref(false);
 
     const saveTokenToStorage = (token: string) => {
         localStorage.setItem('mentariLmsToken', token);
         sessionStorage.setItem('mentariLmsToken', token);
         bearerToken.value = token;
-        
+
         const expiryTime = new Date();
         expiryTime.setHours(expiryTime.getHours() + 24);
         localStorage.setItem('mentariLmsTokenExpiry', expiryTime.toISOString());
@@ -27,11 +30,11 @@ export function useMentariLms() {
     const loadTokenFromStorage = () => {
         const storedToken = localStorage.getItem('mentariLmsToken');
         const storedExpiryTime = localStorage.getItem('mentariLmsTokenExpiry');
-        
+
         if (storedToken && storedExpiryTime) {
             const expiryTime = new Date(storedExpiryTime);
             const now = new Date();
-            
+
             if (now < expiryTime) {
                 bearerToken.value = storedToken;
                 tokenExpiryTime.value = storedExpiryTime;
@@ -79,7 +82,7 @@ export function useMentariLms() {
         }
 
         saveTokenToStorage(bearerToken.value);
-        
+
         loading.value = true;
         error.value = '';
         tokenExpiredMessage.value = '';
@@ -183,7 +186,7 @@ export function useMentariLms() {
         nextTick(() => {
             const container = document.getElementById('courseDetailsContainer');
             const backToTopBtn = document.getElementById('backToTopBtn');
-            
+
             if (container && backToTopBtn) {
                 container.addEventListener('scroll', () => {
                     if (container.scrollTop > 300) {
@@ -194,6 +197,51 @@ export function useMentariLms() {
                 });
             }
         });
+    }
+
+    const fetchPretest = async (pretestId: string) => {
+        loadingPretest.value = true;
+        showPretestModal.value = true;
+        pretestData.value = null;
+    
+        try {
+            const makeRequest = async () => {
+                const response = await axios.request({
+                    method: 'GET',
+                    url: `/api/quiz/soal/${pretestId}`,
+                    headers: {
+                        'Authorization': `Bearer ${bearerToken.value}`,
+                        'Content-Type': 'application/json',
+                        'Accept': 'application/json, text/plain, */*',
+                        'Accept-Language': 'id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7',
+                        'Cache-Control': 'no-cache',
+                        'Pragma': 'no-cache'
+                    },
+                    timeout: 10000
+                })
+                return response;
+            }
+    
+            const response = await retryRequest(makeRequest);
+            pretestData.value = response.data;
+        } catch (e) {
+            if(axios.isAxiosError(e)) {
+                if(e.response?.status === 401) {
+                    tokenExpiredMessage.value = 'Your tokens have expired. Please get new tokens.';
+                    clearSession();
+                }
+                error.value = e.response?.data?.message || 'Failed to retrieve pretest. Try again in a few moments.';
+            } else {
+                error.value = "An error occured while retrieving pretest data"
+            }
+        } finally {
+            loadingPretest.value = false;
+        }
+    }
+
+    const closePretest = () => {
+        showPretestModal.value = false;
+        pretestData.value = null;
     }
 
     return {
@@ -213,6 +261,11 @@ export function useMentariLms() {
         fetchCourseDetails,
         scrollToSection,
         scrollToTop,
-        setupScrollButton
+        setupScrollButton,
+        pretestData,
+        showPretestModal,
+        loadingPretest,
+        fetchPretest,
+        closePretest
     };
 }
