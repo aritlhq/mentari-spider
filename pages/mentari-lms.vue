@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { NuxtLayout } from '#components';
 import { watch, onMounted } from 'vue';
-import { useMentariLms } from '~/composables/useMentariLms';
+import { useMentariLms } from '~/composables/mentari-lms';
 
 const {
     bearerToken,
@@ -24,15 +24,11 @@ const {
     pretestData,
     loadingPretest,
     closePretest,
-    showPretestModal
+    showPretestModal,
+    closePretestOnOutsideClick
 } = useMentariLms();
 
-const closePretestOnOutsideClick = (event: MouseEvent) => {
-    const modal = document.querySelector('.pretest-modal-content');
-    if (modal && !modal.contains(event.target as Node)) {
-        closePretest();
-    }
-};
+
 
 onMounted(() => {
     loadTokenFromStorage();
