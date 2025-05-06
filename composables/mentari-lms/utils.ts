@@ -6,7 +6,7 @@ export const retryRequest = async (fn: Function, retries = 3, delayMs = 1000) =>
             return await fn();
         } catch (e) {
             if (i === retries - 1) throw e;
-            await delay(delayMs * (i + 1));
+            await delay(delayMs * (i + 1)); // Exponential backoff delay
         }
     }
 };
