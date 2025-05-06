@@ -1,0 +1,219 @@
+{
+  "kode_course": "20242-05TPLP003-22TIF1013",
+  "kode_section": "PERTEMUAN_1",
+  "judul": "Pretest",
+  "konten": "<p>PERTEMUAN 1</p>",
+  "id_quiz_user": "4cbeb4ff-4588-457f-9f6f-b52f802ce8ff",
+  "duration": 60,
+  "start_at": "2025-03-05T22:03:52.871Z",
+  "end_at": "2025-03-05T22:09:42.857Z",
+  "time_left": -5307858,
+  "data": [
+    {
+      "id": "235715fa-6ac8-4366-bacd-be23d3798004",
+      "id_trx_course_sub_section": "188c0d27-cf54-427f-a42d-ce01cc742633",
+      "jenis_soal": "MULTIPLE_CHOICE",
+      "page": 1,
+      "sort": 1,
+      "judul": "PERTEMUAN 1",
+      "deskripsi": "<p>Apa yang membedakan machine learning dengan pendekatan pemrograman tradisional?</p>",
+      "id_jawaban": "c8d5bf38-c260-4b5e-96de-99e343f0d2d3",
+      "jawaban": null,
+      "grade_jawaban": 0,
+      "feedback": null,
+      "feedback_at": null,
+      "list_jawaban": [
+        {
+          "id": "c8d5bf38-c260-4b5e-96de-99e343f0d2d3",
+          "jawaban": "<p>Machine learning mengandalkan algoritma yang memungkinkan komputer untuk belajar dari data dan pengalaman, sedangkan pemrograman tradisional mengandalkan aturan yang eksplisit.</p>",
+          "sort": 1
+        },
+        {
+          "id": "9949f6cb-65d0-427b-82c9-993a28616ff1",
+          "jawaban": "<p>Machine learning membutuhkan perangkat keras khusus, sedangkan pemrograman tradisional tidak memerlukan perangkat keras tambahan.</p>",
+          "sort": 2
+        },
+        {
+          "id": "b819a476-3c0c-405a-9573-da1b17bce66e",
+          "jawaban": "<p>Machine learning mengharuskan programmer menulis aturan atau kode untuk setiap langkah, sedangkan pemrograman tradisional hanya mengandalkan data.</p>",
+          "sort": 3
+        },
+        {
+          "id": "2daf698f-2de2-4195-b574-7bfd6b3321b4",
+          "jawaban": "<p>Machine learning tidak membutuhkan data sama sekali, sedangkan pemrograman tradisional membutuhkan data.</p>",
+          "sort": 4
+        },
+        {
+          "id": "0d25a354-f99d-4f66-9af4-559111fae079",
+          "jawaban": "<p>Machine learning hanya digunakan untuk analisis data besar, sedangkan pemrograman tradisional bisa digunakan di semua jenis aplikasi.</p>",
+          "sort": 5
+        }
+      ]
+    },
+    {
+      "id": "b8683f8d-52bd-4915-9211-322721aab638",
+      "id_trx_course_sub_section": "188c0d27-cf54-427f-a42d-ce01cc742633",
+      "jenis_soal": "MULTIPLE_CHOICE",
+      "page": 2,
+      "sort": 2,
+      "judul": "PERTEMUAN 1",
+      "deskripsi": "<p>Jika Anda sedang membangun model machine learning, urutan yang benar dalam proses pengembangan adalah:</p>",
+      "id_jawaban": "bf0d6bb3-230f-4e91-9ef2-49a07c03b0f3",
+      "jawaban": null,
+      "grade_jawaban": 0,
+      "feedback": null,
+      "feedback_at": null,
+      "list_jawaban": [
+        {
+          "id": "15834dfe-2aad-4868-adb2-145014587f81",
+          "jawaban": "<p>Pelatihan model → Pengumpulan data → Prediksi → Evaluasi model → Pembersihan data</p>",
+          "sort": 1
+        },
+        {
+          "id": "f8e0385a-49e3-4baf-9197-047c113d286e",
+          "jawaban": "<p>Pengumpulan data → Evaluasi model → Pelatihan model → Prediksi → Pembersihan data</p>",
+          "sort": 2
+        },
+        {
+          "id": "60ec5f8f-7cbf-4f0e-9bf8-2af330a4fa44",
+          "jawaban": "<p>Prediksi → Evaluasi model → Pelatihan model → Pengumpulan data → Pembersihan data</p>",
+          "sort": 3
+        },
+        {
+          "id": "bf0d6bb3-230f-4e91-9ef2-49a07c03b0f3",
+          "jawaban": "<p>Pengumpulan data → Pembersihan data → Pelatihan model → Evaluasi model → Prediksi</p>",
+          "sort": 4
+        },
+        {
+          "id": "a93fcef0-2552-45e7-987e-3c6787f32ceb",
+          "jawaban": "<p>Pembersihan data → Pelatihan model → Prediksi → Pengumpulan data → Evaluasi model</p>",
+          "sort": 5
+        }
+      ]
+    },
+    {
+      "id": "dfded0d7-327a-4222-aec0-e7785cb046ae",
+      "id_trx_course_sub_section": "188c0d27-cf54-427f-a42d-ce01cc742633",
+      "jenis_soal": "MULTIPLE_CHOICE",
+      "page": 3,
+      "sort": 3,
+      "judul": "PERTEMUAN 1",
+      "deskripsi": "<p>Dalam situasi di mana Anda memiliki data yang sudah diberi label, algoritma machine learning mana yang paling sesuai untuk digunakan?</p>",
+      "id_jawaban": "bb81909d-d8c6-4d08-a09d-f0fb6f62d3b8",
+      "jawaban": null,
+      "grade_jawaban": 0,
+      "feedback": null,
+      "feedback_at": null,
+      "list_jawaban": [
+        {
+          "id": "a6884030-fd12-4ae0-8890-2591759f4db4",
+          "jawaban": "<p>Self-supervised learning</p>",
+          "sort": 1
+        },
+        {
+          "id": "fcb77087-e72b-4035-a16d-715f913054f8",
+          "jawaban": "<p>Semi-supervised learning</p>",
+          "sort": 2
+        },
+        {
+          "id": "0188744f-2b1c-49fe-b96c-00abcdc761e8",
+          "jawaban": "<p>Reinforcement learning</p>",
+          "sort": 3
+        },
+        {
+          "id": "f85f583f-e135-4084-b5c5-cb4b9cbf1326",
+          "jawaban": "<p>Supervised learning</p>",
+          "sort": 4
+        },
+        {
+          "id": "bb81909d-d8c6-4d08-a09d-f0fb6f62d3b8",
+          "jawaban": "<p>Unsupervised learning</p>",
+          "sort": 5
+        }
+      ]
+    },
+    {
+      "id": "26941c51-ec45-4465-a058-9b4da9ab1ade",
+      "id_trx_course_sub_section": "188c0d27-cf54-427f-a42d-ce01cc742633",
+      "jenis_soal": "MULTIPLE_CHOICE",
+      "page": 4,
+      "sort": 4,
+      "judul": "PERTEMUAN 1",
+      "deskripsi": "<p>Jika model machine learning menghasilkan hasil evaluasi yang buruk dengan nilai akurasi yang rendah, apa yang mungkin menjadi penyebabnya?</p>",
+      "id_jawaban": "6decaa86-e330-4664-9684-0bc0ec60c95a",
+      "jawaban": null,
+      "grade_jawaban": 0,
+      "feedback": null,
+      "feedback_at": null,
+      "list_jawaban": [
+        {
+          "id": "fc995260-8dff-47fe-8d80-3e00fb4f0f5b",
+          "jawaban": "<p>Model menggunakan terlalu banyak fitur yang tidak relevan dengan data.</p>",
+          "sort": 1
+        },
+        {
+          "id": "58f6c602-f7e1-4e39-b2f7-c7940debf86a",
+          "jawaban": "<p>Data pelatihan model sudah sangat baik dan model perlu diubah.</p>",
+          "sort": 2
+        },
+        {
+          "id": "6c396208-0844-4a4c-8849-804a29e828e1",
+          "jawaban": "<p>Model hanya belajar dari sebagian kecil data pelatihan.</p>",
+          "sort": 3
+        },
+        {
+          "id": "6decaa86-e330-4664-9684-0bc0ec60c95a",
+          "jawaban": "<p>Semua alasan di atas dapat menyebabkan akurasi rendah pada model.</p>",
+          "sort": 4
+        },
+        {
+          "id": "83253309-9618-4549-9b12-5dd6359055cd",
+          "jawaban": "<p>Model sudah terlalu kompleks dan mengalami overfitting.</p>",
+          "sort": 5
+        }
+      ]
+    },
+    {
+      "id": "1ec49f74-7774-4faa-92bf-de65392da7ef",
+      "id_trx_course_sub_section": "188c0d27-cf54-427f-a42d-ce01cc742633",
+      "jenis_soal": "MULTIPLE_CHOICE",
+      "page": 5,
+      "sort": 5,
+      "judul": "PERTEMUAN 1",
+      "deskripsi": "<p>Jika Anda memiliki data yang tidak memiliki label, dan tujuan Anda adalah menemukan pola atau struktur dalam data tersebut, metode machine learning mana yang harus digunakan?</p>",
+      "id_jawaban": "f5c9966e-2cc5-4237-9c9d-e9b3b38cc330",
+      "jawaban": null,
+      "grade_jawaban": 0,
+      "feedback": null,
+      "feedback_at": null,
+      "list_jawaban": [
+        {
+          "id": "8167bc05-59d6-4d59-a12a-0e2327dc532f",
+          "jawaban": "<p>Reinforcement learning</p>",
+          "sort": 1
+        },
+        {
+          "id": "464bb5f4-ac42-4266-a577-2cb1d64345d6",
+          "jawaban": "<p>Supervised learning</p>",
+          "sort": 2
+        },
+        {
+          "id": "b8971d80-61a8-4cd9-a9ca-81de984735f5",
+          "jawaban": "<p>Transfer learning</p>",
+          "sort": 3
+        },
+        {
+          "id": "8c9457bd-0523-4eec-a3bc-1d90e12c08e3",
+          "jawaban": "<p>Semi-supervised learning</p>",
+          "sort": 4
+        },
+        {
+          "id": "f5c9966e-2cc5-4237-9c9d-e9b3b38cc330",
+          "jawaban": "<p>Unsupervised learning</p>",
+          "sort": 5
+        }
+      ]
+    }
+  ],
+  "createdAt": "2025-02-22T07:21:34.860Z"
+}
