@@ -2,8 +2,9 @@
 import type { MeetingDetails } from '~/types/attendace';
 import { NuxtLayout } from '#components';
 import { onMounted } from 'vue';
+import { useAttendance } from '~/composables/attendance';
 
-// Menggunakan composable attendance
+// Using the composable
 const {
     bearerToken,
     attendanceData,
@@ -14,7 +15,7 @@ const {
     tokenExpiredMessage,
     tokenExpiryTime,
     formatDate,
-    saveTokenToStorage,
+    // saveTokenToStorage,
     loadTokenFromStorage,
     clearSession,
     getStatusClass,
